@@ -11,16 +11,37 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
-  <body>
+  <body class="container">
     <header class="header">
-      <p>Lorem ipsum dolor sit amet.</p>
-      This is the header
+      <div class="header__nav">
+        <svg class="header__logo">
+          <use xlink:href="images/logo.svg#logo"></use>
+        </svg>
+        <div class="header__list">
+          <ul class="header__links">
+            <li class="header__link">About</li>
+            <li class="header__link">Services</li>
+            <li class="header__link">Projects</li>
+            <li class="header__link">Contact</li>
+          </ul>
+        </div>
+      </div>
+      <h1 class="header__heading">We are creatives</h1>
+      <div class="arrdown">&dArr;</div>
     </header>
+    <main class="body">This is the body content</main>
+    <div class="testimonials">These are the testimonials</div>
+    <div class="gallery">This is the gallery</div>
+    <footer class="footer">This is the footer</footer>
   </body>
 </html>

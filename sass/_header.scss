@@ -1,0 +1,46 @@
+.header {
+  //   background-color: var(--yellow);
+  background-image: url(../images/desktop/image-header.jpg);
+  background-size: cover;
+  height: 100vh;
+  padding-top: 3rem;
+
+  &__logo {
+    height: 3rem;
+    // transform: scale(2);
+  }
+
+  &__nav {
+    // background-color: #cccbbb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95vw;
+    margin: auto;
+  }
+
+  &__links {
+    display: flex;
+
+    list-style: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.35rem;
+  }
+
+  &__link {
+    &:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  &__heading {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 7.5rem;
+    text-align: center;
+    letter-spacing: 1.75rem;
+    margin: 20vh 10vw 0 10vw;
+  }
+}

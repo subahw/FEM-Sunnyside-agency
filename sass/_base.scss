@@ -1,3 +1,38 @@
-.header {
-  color: navy;
+:root {
+  --soft-red: hsla(7, 99%, 70%, 0.3);
+  --soft-yellow: hsla(51, 100%, 49%, 0.5);
+  --yellow: hsl(51, 100%, 49%);
+  --red: hsla(7, 99%, 70%, 0.6);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-greyish-blue: hsl(213, 9%, 39%);
+  --dark-greyish-blue: hsl(232, 10%, 55%);
+  --greyish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: #95d6c9;
+  --font: "Barlow", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: 0;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font);
+  font-weight: 600;
+}
+
+.container {
+  display: grid;
 }
