@@ -34,11 +34,15 @@ body {
 
 .header {
   background-image: url(../images/desktop/image-header.jpg);
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
   height: 100vh;
-  padding-top: 3rem; }
+  padding-top: 4rem; }
   .header__logo {
-    height: 3rem; }
+    height: 30px;
+    margin-left: 400px;
+    margin-top: 15px;
+    transform: scale(1.75); }
   .header__nav {
     display: flex;
     align-items: center;
@@ -50,17 +54,48 @@ body {
     list-style: none;
     color: #fff;
     font-weight: 300;
-    font-size: 1.35rem; }
+    font-size: 1.75rem;
+    padding-right: 4rem; }
   .header__link:not(:last-child) {
-    margin-right: 2.5rem; }
+    margin-right: 4.5rem; }
   .header__heading {
     color: #fff;
     text-transform: uppercase;
+    width: 100rem;
     font-weight: 900;
-    font-size: 7.5rem;
+    font-size: 8rem;
     text-align: center;
     letter-spacing: 1.75rem;
-    margin: 20vh 10vw 0 10vw; }
+    margin: 20vh 25vw 0 25vw; }
+  .header__arrdown {
+    position: relative;
+    background-color: #fff;
+    border-radius: 10rem;
+    width: 0.5rem;
+    height: 13rem;
+    margin: 12vh 50vw 0 50vw; }
+    .header__arrdown::before {
+      content: "";
+      display: inline-block;
+      width: 0.5rem;
+      border-radius: 10rem;
+      height: 3rem;
+      background-color: #fff;
+      transform: rotate(-45deg);
+      position: absolute;
+      bottom: -0.3rem;
+      right: 1rem; }
+    .header__arrdown::after {
+      content: "";
+      display: inline-block;
+      width: 0.5rem;
+      border-radius: 10rem;
+      height: 3rem;
+      background-color: #fff;
+      transform: rotate(45deg);
+      position: absolute;
+      bottom: -0.3rem;
+      left: 1rem; }
 
 .footer {
   height: 30vh;
