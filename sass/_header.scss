@@ -4,10 +4,11 @@
   background-position: center;
   height: 100vh;
   padding-top: 4rem;
+  overflow-x: hidden;
 
   &__logo {
     height: 30px;
-    margin-left: 400px;
+    margin-left: 450px;
     margin-top: 15px;
     transform: scale(1.75);
   }
@@ -17,7 +18,6 @@
     align-items: center;
     justify-content: space-between;
     width: 95vw;
-    margin: auto;
   }
 
   &__links {
@@ -27,7 +27,6 @@
     color: #fff;
     font-weight: 300;
     font-size: 1.75rem;
-    padding-right: 4rem;
   }
 
   &__link {
@@ -53,7 +52,7 @@
     border-radius: 10rem;
     width: 0.5rem;
     height: 13rem;
-    margin: 12vh 50vw 0 50vw;
+    margin: 12vh 49vw 0 49vw;
 
     &::before {
       content: "";
